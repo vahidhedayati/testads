@@ -29,3 +29,5 @@
 			<li><g:link class="list" controller="Employee" action="index"><g:message code="employee" args="[entityName]" /></g:link></li>	
 		</ul>
 </div>
+
+<ads:loadjui/>

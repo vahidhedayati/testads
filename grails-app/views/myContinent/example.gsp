@@ -9,7 +9,6 @@
 		
 		
 	<body>
-	<a href="#create-myContinent" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
 
 	
 	
@@ -135,43 +134,43 @@ Same as above but this time in auto complete mode:<br>
 
 <form method=post action=example5>
 <label>Continent:</label>
-<ads:autoCompletePrimary id="primarySearch1"
+<ads:autoCompletePrimary id="primarySearch15"
 name="NAMEOFcontinentName"
 domain='ajaxdependancyselectexample.MyContinent'
 searchField='continentName'
 collectField='id'
-setId="secondarySearch2"
-hidden='hidden3'
+setId="secondarySearch25"
+hidden='hidden223'
 value=''/>
 
-<input type=hidden id="hidden3" name="continentId" value=""/>
+<input type=hidden id="hidden223" name="continentId" value=""/>
 
 <label>Country:</label>
-<ads:autoCompleteSecondary id="secondarySearch2"
+<ads:autoCompleteSecondary id="secondarySearch25"
 name="NAMEOFcountryName" 
 domain='ajaxdependancyselectexample.MyCountry' 
 primarybind='mycontinent.id' 
-hidden='hidden3' 
-hidden2='hidden4' 
+hidden='hidden223'
+hidden2='hidden214'
 searchField='countryName' 
 collectField='id'
-setId="secondarySearch3" 
+setId="secondarySearch35"
 value=''/>
 
-<input type=hidden id="hidden4" name="countryId" value=""/>
+<input type=hidden id="hidden214" name="countryId" value=""/>
 
 <label>City:</label>
-<ads:autoCompleteSecondary id="secondarySearch3"
+<ads:autoCompleteSecondary id="secondarySearch35"
 name="NAMEOFcityName" 
 domain='ajaxdependancyselectexample.MyCity' 
 primarybind='mycountry.id' 
-hidden='hidden4' 
-hidden2='hidden5' 
+hidden='hidden214'
+hidden2='hidden5525'
 searchField='cityName' 
 collectField='id' 
 value=''/>
 
-<input type=hidden id="hidden5" name="cityId" value=""/>
+<input type=hidden id="hidden5525" name="cityId" value=""/>
 
 <input type=submit value=go> </form>
 <br><br>
