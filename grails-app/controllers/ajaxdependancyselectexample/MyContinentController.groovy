@@ -12,7 +12,8 @@ class MyContinentController {
         redirect(action: "list", params: params)
     }
 	
-
+	def estado() { 
+}
 	
 	def example() {
         render (view: 'example', model: [params: params])

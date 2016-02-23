@@ -10,6 +10,7 @@ import ajaxdependancyselectexample.MyShops
 import ajaxdependancyselectexample.Os
 import ajaxdependancyselectexample.Streets
 import ajaxdependancyselectexample.Users
+import redeanimalg3.*
 import dms.nexusglobal.Subtag
 import dms.nexusglobal.Tag
 import dms.nexusglobal.Template
@@ -17,6 +18,18 @@ import dms.nexusglobal.Template
 class BootStrap {
 
     def init = { servletContext ->
+
+	def ee1=Estado.findOrSaveWhere(nome:'aaa')
+	def ee2=Estado.findOrSaveWhere(nome:'bbb')
+	
+Cidade.findOrSaveWhere(nome:'abc', estado: ee1)
+Cidade.findOrSaveWhere(nome:'bbc', estado: ee1)
+Cidade.findOrSaveWhere(nome:'cbc', estado: ee1)
+
+Cidade.findOrSaveWhere(nome:'ZZZabc', estado: ee2)
+Cidade.findOrSaveWhere(nome:'ZZZbbc', estado: ee2)
+Cidade.findOrSaveWhere(nome:'SSScbc', estado: ee2)
+
 
         def d1=Departments.findOrSaveWhere(name: 'HR')
         def d2=Departments.findOrSaveWhere(name: 'Finance')
