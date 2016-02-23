@@ -4,6 +4,12 @@
 		<meta name="layout" content="main">
 		<g:set var="entityName" value="${message(code: 'myContinent.label', default: 'MyContinent')}" />
 		<title><g:message code="default.create.label" args="[entityName]" /></title>
+<style>
+.bigFont{
+	font-weight: bold;
+	font-size: 1.9em;
+}
+</style>
 	</head>
 	
 		
@@ -18,7 +24,7 @@ A simple two tier relationship requires a call to selectPrimary with result retu
 
 <form method=post action=example5>
 	
-	<ads:selectPrimary id="MyCountry1" name="MyCountry1"
+	<ads:selectPrimary class="bigFont" id="MyCountry1" name="MyCountry1"
         domain='ajaxdependancyselectexample.MyCountry'
         searchField='countryName'
         collectField='id'
@@ -52,7 +58,7 @@ A simple two tier relationship requires a call to selectPrimary with result retu
  <form method=post action=example5>
     
     
-<ads:selectPrimary id="MyContinent2" name="MyContinent2"
+<ads:selectPrimary id="MyContinent2" class="bigFont" name="MyContinent2"
     domain='ajaxdependancyselectexample.MyContinent'
     searchField='continentName'
     collectField='id'
@@ -74,7 +80,7 @@ A simple two tier relationship requires a call to selectPrimary with result retu
 
 
 
-<ads:selectSecondary id="MyCountry11" name="MyCountry11"
+<ads:selectSecondary id="MyCountry11" class="bigFont"  name="MyCountry11"
 	domain2='ajaxdependancyselectexample.MyCity'
     bindid="mycountry.id"
     searchField2='cityName'
