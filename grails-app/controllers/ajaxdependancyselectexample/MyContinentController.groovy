@@ -11,6 +11,8 @@ class MyContinentController {
     def index() {
         redirect(action: "list", params: params)
     }
+   def issue14() {
+}
 	
 	def estado() { 
 }

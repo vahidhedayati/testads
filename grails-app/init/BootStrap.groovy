@@ -79,7 +79,7 @@ Cidade.findOrSaveWhere(nome:'SSScbc', estado: ee2)
         def dgg4=d2.addToOffices(name:'Wales').save(flush:true)
 
         def ccc1=Computers.findOrSaveWhere(department:d1, pcName:'AXM-tqw')
-        Computers.findOrSaveWhere(department:d1, pcName:'BXM-lpt')
+        def ccc11=Computers.findOrSaveWhere(department:d1, pcName:'BXM-lpt')
         Computers.findOrSaveWhere(department:d1, pcName:'SXM-abf')
         def ccc2=Computers.findOrSaveWhere(department:d2, pcName:'gjb-aabf')
         Computers.findOrSaveWhere(department:d2, pcName:'otr-aaf')
@@ -87,8 +87,8 @@ Cidade.findOrSaveWhere(nome:'SSScbc', estado: ee2)
 
         Os.findOrSaveWhere(computers:ccc1, osName:'Windows')
         Os.findOrSaveWhere(computers:ccc1, osName:'Mac')
-        Os.findOrSaveWhere(computers:ccc2, osName:'Redhat')
-        Os.findOrSaveWhere(computers:ccc2, osName:'Centos')
+        Os.findOrSaveWhere(computers:ccc11, osName:'Redhat')
+        Os.findOrSaveWhere(computers:ccc11, osName:'Centos')
 
         Users.findOrSaveWhere(computers:ccc2, userName:'Gill')
         Users.findOrSaveWhere(computers:ccc2, userName:'Kevin')
@@ -97,6 +97,9 @@ Cidade.findOrSaveWhere(nome:'SSScbc', estado: ee2)
         Users.findOrSaveWhere(computers:ccc1, userName:'Joe')
         Users.findOrSaveWhere(computers:ccc1, userName:'Mark')
         Users.findOrSaveWhere(computers:ccc1, userName:'Jackie')
+        Users.findOrSaveWhere(computers:ccc11, userName:'Joe')
+        Users.findOrSaveWhere(computers:ccc11, userName:'Mark')
+        Users.findOrSaveWhere(computers:ccc11, userName:'Jackie')
 
 
         // Create continents
