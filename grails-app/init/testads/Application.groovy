@@ -1,4 +1,4 @@
-package testads314
+package testads
 
 import grails.boot.GrailsApp
 import grails.boot.config.GrailsAutoConfiguration
